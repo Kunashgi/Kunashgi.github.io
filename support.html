@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - Albion Multi App</title>
+    <meta name="description" content="Soporte y contacto para Albion Multi App - Calculadora de refinamiento y comparador de precios para Albion Online.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2416 100%);
+            color: #e8e2d0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #c9a961;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #c9a961;
+            font-size: 28px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a89b7a;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: #c9a961;
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #4a3f22;
+            padding-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: #d4cab0;
+        }
+
+        .contact-box {
+            background: rgba(201, 169, 97, 0.1);
+            border: 1px solid #c9a961;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: #c9a961;
+            color: #1a1a1a;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+
+        .email-link:hover {
+            background: #b59550;
+        }
+
+        .email-text {
+            color: #c9a961;
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: #d4cab0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid #4a3f22;
+            color: #8a7f62;
+            font-size: 13px;
+        }
+
+        .lang-toggle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lang-toggle a {
+            color: #c9a961;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 13px;
+        }
+
+        .lang-toggle a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Albion Multi App</h1>
+        <p class="subtitle">Soporte / Support / Suporte</p>
+
+        <div class="lang-toggle">
+            <a href="#" onclick="showLang('es'); return false;">Español</a> |
+            <a href="#" onclick="showLang('en'); return false;">English</a> |
+            <a href="#" onclick="showLang('pt'); return false;">Português</a>
+        </div>
+
+        <!-- SPANISH -->
+        <div id="lang-es" class="section active">
+            <h2>Contacto</h2>
+            <p>Si tienes preguntas, reportes de errores o sugerencias, puedes contactarnos directamente por correo electrónico. Respondemos lo antes posible.</p>
+
+            <div class="contact-box">
+                <p>Correo de soporte:</p>
+                <p class="email-text">albionmultiapp@gmail.com</p>
+                <a href="mailto:albionmultiapp@gmail.com?subject=Soporte%20Albion%20Multi%20App" class="email-link">Enviar correo</a>
+            </div>
+
+            <h2>Preguntas frecuentes</h2>
+            <ul>
+                <li><strong>¿Cada cuánto se actualizan los precios?</strong> Los datos se actualizan cada 30 minutos desde la API pública de Albion Online.</li>
+                <li><strong>¿Qué incluye la suscripción Premium?</strong> Uso ilimitado de la calculadora de refinamiento y futuras funcionalidades del roadmap.</li>
+                <li><strong>¿La app es oficial de Albion Online?</strong> No. Es una herramienta independiente creada por fans para la comunidad.</li>
+            </ul>
+
+            <h2>Tiempo de respuesta</h2>
+            <p>Intentamos responder a todos los correos dentro de las 48 horas hábiles.</p>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="lang-en" class="section">
+            <h2>Contact</h2>
+            <p>If you have questions, bug reports, or suggestions, you can contact us directly by email. We respond as soon as possible.</p>
+
+            <div class="contact-box">
+                <p>Support email:</p>
+                <p class="email-text">albionmultiapp@gmail.com</p>
+                <a href="mailto:albionmultiapp@gmail.com?subject=Albion%20Multi%20App%20Support" class="email-link">Send email</a>
+            </div>
+
+            <h2>FAQ</h2>
+            <ul>
+                <li><strong>How often are prices updated?</strong> Data is refreshed every 30 minutes from the public Albion Online API.</li>
+                <li><strong>What does the Premium subscription include?</strong> Unlimited use of the refining calculator and upcoming roadmap features.</li>
+                <li><strong>Is this an official Albion Online app?</strong> No. It is an independent fan-made tool for the community.</li>
+            </ul>
+
+            <h2>Response time</h2>
+            <p>We aim to reply to all emails within 48 business hours.</p>
+        </div>
+
+        <!-- PORTUGUESE -->
+        <div id="lang-pt" class="section">
+            <h2>Contato</h2>
+            <p>Se você tem perguntas, relatórios de bugs ou sugestões, pode nos contatar diretamente por e-mail. Respondemos o mais rápido possível.</p>
+
+            <div class="contact-box">
+                <p>E-mail de suporte:</p>
+                <p class="email-text">albionmultiapp@gmail.com</p>
+                <a href="mailto:albionmultiapp@gmail.com?subject=Suporte%20Albion%20Multi%20App" class="email-link">Enviar e-mail</a>
+            </div>
+
+            <h2>Perguntas frequentes</h2>
+            <ul>
+                <li><strong>Com que frequência os preços são atualizados?</strong> Os dados são atualizados a cada 30 minutos pela API pública do Albion Online.</li>
+                <li><strong>O que inclui a assinatura Premium?</strong> Uso ilimitado da calculadora de refinamento e futuras funcionalidades.</li>
+                <li><strong>Este é um app oficial do Albion Online?</strong> Não. É uma ferramenta independente feita por fãs para a comunidade.</li>
+            </ul>
+
+            <h2>Tempo de resposta</h2>
+            <p>Tentamos responder todos os e-mails em até 48 horas úteis.</p>
+        </div>
+
+        <div class="footer">
+            © 2026 Vectors · Albion Multi App<br>
+            Not affiliated with or endorsed by Sandbox Interactive GmbH or Albion Online.
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
